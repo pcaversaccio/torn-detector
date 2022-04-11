@@ -16,7 +16,7 @@ dotenv.config();
 const initTransactions: Array<any> = []; // Array to track all deployer addresses from contract creation transactions.
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const susAddresses: Array<any> = []; // Array to track all suspicious contracts that got deployed via an address that was previously funded through Tornado.Cash.
+const susAddresses: Array<any> = []; // Array to track all suspicious deployer addresses that deployed via funds retrieved through Tornado.Cash.
 
 const baseUrl =
   "https://api.etherscan.io/api?module=account&action=txlistinternal&address="; // Etherscan API base URL for internal transactions retrievals.
@@ -75,5 +75,14 @@ export async function main(blockNumber?: number) {
 
     // Save the output.
     fs.writeFileSync("out.json", JSON.stringify(susAddresses));
+
+    // Print the result including Etherscan link.
+    const len = susAddresses.length;
+    console.log(
+      `\nThe following addresses deployed a contract at block number ${selectedBlockNumber} via funds retrieved through Tornado.Cash:\n`
+    );
+    for (let i = 0; i < len; ++i) {
+      console.log(`- https://etherscan.io/address/${susAddresses[i]}\n`);
+    }
   }
 }
