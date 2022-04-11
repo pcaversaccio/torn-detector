@@ -1,0 +1,26 @@
+{
+  "name": "torn-detector",
+  "version": "1.0.0",
+  "description": "Detect if a contract has been deployed in the latest block from an address that was previously funded through Tornado.Cash.",
+  "main": "index.js",
+  "keywords": [
+    "deployment",
+    "ethereum",
+    "smart-contracts",
+    "ethersjs",
+    "tornado-cash"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcaversaccio/torn-detector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pcaversaccio/torn-detector/issues"
+  },
+  "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
+  "license": "WTFPL",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/pcaversaccio/torn-detector#readme"
+}
