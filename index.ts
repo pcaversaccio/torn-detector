@@ -21,12 +21,13 @@ const susAddresses: Array<any> = []; // Array to track all suspicious deployer a
 const baseUrl =
   "https://api.etherscan.io/api?module=account&action=txlistinternal&address="; // Etherscan API base URL for internal transactions retrievals.
 
-let selectedBlockNumber: number; // Variable that defines the selected block number to be analysed.
-
 // Connecting to the Ethereum mainnet RPC.
 const provider = new ethers.providers.JsonRpcProvider(
   process.env.ETH_MAINNET_URL
 );
+
+let selectedBlockNumber: number; // Variable that defines the selected block number to be analysed.
+const dir = "./out"; // Define the output directory.
 
 export async function main(blockNumber?: number) {
   if (blockNumber && blockNumber >= 0) {
@@ -73,8 +74,15 @@ export async function main(blockNumber?: number) {
       }
     }
 
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir);
+    }
+
     // Save the output.
-    fs.writeFileSync("out.json", JSON.stringify(susAddresses));
+    fs.writeFileSync(
+      `${dir}/suspicious_address_block_number_${selectedBlockNumber}.json`,
+      JSON.stringify(susAddresses)
+    );
 
     // Print the result including Etherscan link.
     const len = susAddresses.length;
