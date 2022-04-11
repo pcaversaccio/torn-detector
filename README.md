@@ -20,10 +20,11 @@ yarn install
 
 ## `.env` File
 
-You must specify the RPC URL of your mainnet node in the `.env` file:
+You must specify the RPC URL of your mainnet node as well as the Etherscan API key in the `.env` file:
 
 ```txt
 ETH_MAINNET_URL=https://eth-mainnet.alchemyapi.io/v2/<your api key>
+ETHERSCAN_API_KEY=6FECCD7C9B8C24...
 ```
 
 ## Testing
