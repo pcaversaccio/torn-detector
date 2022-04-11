@@ -20,7 +20,7 @@
   "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
   "license": "WTFPL",
   "scripts": {
-    "test": "npx ts-node test.ts",
+    "test": "npx ts-node ./test/detect.test.ts",
     "lint": "eslint --ext .ts .",
     "prettier": "npx prettier -w **/*.{js,ts,md}"
   },

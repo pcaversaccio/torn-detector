@@ -29,7 +29,7 @@ const provider = new ethers.providers.JsonRpcProvider(
 let selectedBlockNumber: number; // Variable that defines the selected block number to be analysed.
 const dir = "./out"; // Define the output directory.
 
-export async function main(blockNumber?: number) {
+export async function detect(blockNumber?: number) {
   if (blockNumber && blockNumber >= 0) {
     selectedBlockNumber = blockNumber; // Use the user-defined block number.
   } else {
