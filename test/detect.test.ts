@@ -1,4 +1,4 @@
-import { detect } from "../index";
+import { detect } from "../src/index";
 
 // Cream Finance exploiter contract
 detect(13499638).catch((error) => {
