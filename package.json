@@ -20,7 +20,20 @@
   "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
   "license": "WTFPL",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ext .ts .",
+    "prettier": "npx prettier -w **/*.{js,ts,md}"
   },
-  "homepage": "https://github.com/pcaversaccio/torn-detector#readme"
+  "homepage": "https://github.com/pcaversaccio/torn-detector#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/node-fetch": "^2.6.1",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.13.0",
+    "ethers": "^5.6.2",
+    "node-fetch": "2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
 }
