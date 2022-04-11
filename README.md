@@ -18,12 +18,20 @@ After having installed Yarn, simply run:
 yarn install
 ```
 
+## `.env` File
+
+You must specify the RPC URL of your mainnet node in the `.env` file:
+
+```txt
+ETH_MAINNET_URL=https://eth-mainnet.alchemyapi.io/v2/<your api key>
+```
+
 ## Testing
 
 Run
 
 ```bash
-npx ts-node run.ts
+npx ts-node test.ts
 ```
 
 The output result will be the C.R.E.A.M. Finance flash loan attacker contract [`0x24354D31bC9D90F62FE5f2454709C32049cf866b`](https://etherscan.io/address/0x24354D31bC9D90F62FE5f2454709C32049cf866b).

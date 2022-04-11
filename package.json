@@ -2,7 +2,7 @@
   "name": "torn-detector",
   "version": "1.0.0",
   "description": "Detect if a contract has been deployed in the latest (or predefined) block from an address that was previously funded through Tornado.Cash.",
-  "main": "index.js",
+  "main": "index.ts",
   "keywords": [
     "deployment",
     "ethereum",
