@@ -1,5 +1,7 @@
 # 🕵️‍♂️ TORN Detector
 
+[![build status](https://github.com/pcaversaccio/torn-detector/actions/workflows/test.yml/badge.svg)](https://github.com/pcaversaccio/torn-detector/actions)
+
 Detect if a contract has been deployed in the latest (or predefined) block from an address that was previously funded through Tornado.Cash.
 
 ## Installation
