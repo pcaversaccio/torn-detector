@@ -7,7 +7,7 @@ describe("TORN detector test", () => {
     const result = await detect(blockNumber);
     expect(result).to.be.an("array").that.is.empty;
   });
-  
+
   it("return C.R.E.A.M. Finance flash loan attacker address", async function () {
     const blockNumber = 13499638;
     const attackerAddress = "0x24354D31bC9D90F62FE5f2454709C32049cf866b";
