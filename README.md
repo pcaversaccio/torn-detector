@@ -34,5 +34,3 @@ Simply run
 ```bash
 yarn test
 ```
-
-The output result will be the C.R.E.A.M. Finance flash loan attacker contract [`0x24354D31bC9D90F62FE5f2454709C32049cf866b`](https://etherscan.io/address/0x24354D31bC9D90F62FE5f2454709C32049cf866b).

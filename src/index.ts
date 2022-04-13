@@ -93,4 +93,7 @@ export async function detect(blockNumber?: number) {
       console.log(`- https://etherscan.io/address/${susAddresses[i]}\n`);
     }
   }
+
+  // Return array of all suspicious addresses.
+  return susAddresses;
 }
