@@ -44,6 +44,6 @@ jobs:
 
       - name: TORN detector tests
         run: yarn test
-        env: 
+        env:
           ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
           ETH_MAINNET_URL: ${{ secrets.ETH_MAINNET_URL }}

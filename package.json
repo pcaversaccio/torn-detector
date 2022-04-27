@@ -14,6 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/pcaversaccio/torn-detector.git"
   },
+  "homepage": "https://github.com/pcaversaccio/torn-detector#readme",
   "bugs": {
     "url": "https://github.com/pcaversaccio/torn-detector/issues"
   },
@@ -22,9 +23,8 @@
   "scripts": {
     "test": "mocha --exit --recursive 'test/**/*.test.ts'",
     "lint": "eslint --ext .ts .",
-    "prettier": "npx prettier -w **/*.{js,ts,md}"
+    "prettier": "npx prettier -w **/*.{js,ts,md,json,yml}"
   },
-  "homepage": "https://github.com/pcaversaccio/torn-detector#readme",
   "devDependencies": {
     "@types/chai": "^4.3.1",
     "@types/mocha": "^9.1.1",
