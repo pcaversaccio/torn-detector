@@ -1,4 +1,4 @@
-name: Test TORN detector
+name: 🕵️‍♂️ Test TORN detector
 
 on: [push, pull_request]
 
@@ -24,7 +24,7 @@ jobs:
 
       - name: Get Yarn cache directory path
         id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+        run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - uses: actions/cache@v3
         id: yarn-cache
@@ -40,7 +40,7 @@ jobs:
           node-version: ${{ matrix.node_version }}
 
       - name: Install Yarn project with a clean slate
-        run: yarn install --frozen-lockfile
+        run: yarn install --prefer-offline --frozen-lockfile
 
       - name: TORN detector tests
         run: yarn test
