@@ -1,6 +1,6 @@
 import * as dotenv from "dotenv";
 import { ethers } from "ethers";
-import fetch from "node-fetch";
+import { RequestInfo } from "node-fetch";
 import * as fs from "fs";
 
 import {
@@ -8,7 +8,7 @@ import {
   TORN_ADDRESS_10ETH,
   TORN_ADDRESS_1ETH,
   TORN_ADDRESS_01ETH,
-} from "./addresses";
+} from "./addresses.js";
 
 dotenv.config();
 
@@ -55,9 +55,12 @@ export async function detect(blockNumber?: number) {
   // All Tornado.Cash transactions are tracked as internal transactions.
   for (let i = 0; i < initTransactions.length; ++i) {
     // Retrieve all internal transactions via the Etherscan API.
-    const response = await fetch(
+    const fetch = (url: RequestInfo) =>
+      import("node-fetch").then(({ default: fetch }) => fetch(url));
+    const response = (await fetch(
       `${baseUrl}${initTransactions[i]}&startblock=0&endblock=${selectedBlockNumber}&sort=asc&apikey=${process.env.ETHERSCAN_API_KEY}`
-    );
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    )) as any;
     const res = await response.json();
     // Check if the internal transactions have been conducted by one of the Tornado Cash contract addresses.
     for (let j = 0; j < res.result.length; ++j) {

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "commonjs",
+    "module": "ES2022",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -9,7 +9,7 @@
     "strict": true,
     "rootDirs": ["./src", "./test"],
     "esModuleInterop": true,
-    "resolveJsonModule": true
+    "moduleResolution": "Node16"
   },
   "exclude": ["out", "node_modules"],
   "include": ["./test", "./src"]

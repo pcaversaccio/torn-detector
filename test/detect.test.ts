@@ -1,4 +1,4 @@
-import { detect } from "../src/index";
+import { detect } from "../src/index.js";
 import { expect } from "chai";
 
 describe("TORN detector test", () => {
