@@ -1,5 +1,5 @@
 import * as dotenv from "dotenv";
-import { ethers } from "ethers";
+import { JsonRpcProvider, getAddress } from "ethers";
 import { RequestInfo } from "node-fetch";
 import * as fs from "fs";
 
@@ -13,6 +13,9 @@ import {
 dotenv.config();
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
+let blockPayload: Array<any> = []; // Array to aggregate all transactions of a single block.
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const initTransactions: Array<any> = []; // Array to track all deployer addresses from contract creation transactions.
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -22,9 +25,7 @@ const baseUrl =
   "https://api.etherscan.io/api?module=account&action=txlistinternal&address="; // Etherscan API base URL for internal transactions retrievals.
 
 // Connecting to the Ethereum mainnet RPC.
-const provider = new ethers.providers.JsonRpcProvider(
-  process.env.ETH_MAINNET_URL
-);
+const provider = new JsonRpcProvider(process.env.ETH_MAINNET_URL);
 
 let selectedBlockNumber: number; // Variable that defines the selected block number to be analysed.
 const dir = "./out"; // Define the output directory.
@@ -37,15 +38,18 @@ export async function detect(blockNumber?: number) {
   }
 
   // Get the latest block from the network, where `blockPayload` is an array of `TransactionResponse` objects.
-  const blockPayload = await provider.getBlockWithTransactions(
-    selectedBlockNumber
-  );
+  const block = await provider.getBlock(selectedBlockNumber, true);
+  if (block) {
+    blockPayload = await Promise.all(
+      block.transactions.map((hash) => block.getPrefetchedTransaction(hash))
+    );
+  }
 
   // Get all contract deployment transactions and store the deployer address in a separate array.
-  for (let i = 0; i < blockPayload.transactions.length; ++i) {
-    if (blockPayload.transactions[i].to === null) {
+  for (let i = 0; i < blockPayload.length; ++i) {
+    if (blockPayload[i].to === null) {
       let j = 0;
-      initTransactions[j] = blockPayload.transactions[i].from;
+      initTransactions[j] = blockPayload[i].from;
       ++j;
     }
   }
@@ -65,7 +69,7 @@ export async function detect(blockNumber?: number) {
     // Check if the internal transactions have been conducted by one of the Tornado Cash contract addresses.
     for (let j = 0; j < res.result.length; ++j) {
       let z = 0;
-      const checksummedAddress = ethers.utils.getAddress(res.result[j].from); // We use checksummed Ethereum addresses.
+      const checksummedAddress = getAddress(res.result[j].from); // We use checksummed Ethereum addresses.
       if (
         checksummedAddress === TORN_ADDRESS_100ETH ||
         checksummedAddress === TORN_ADDRESS_10ETH ||
