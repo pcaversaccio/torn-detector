@@ -648,10 +648,10 @@ esutils@^2.0.2:
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
-ethers@^6.0.3:
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.0.4.tgz#4ff48a94e51248cdcdca762deda2b98d595a2889"
-  integrity sha512-El/9IN2A0ptmxdMQA/Rzn/F80/8OpwHSQ+CkU83y6XIT0fNUz2M2X12VCWzlkmLV0dTGk45gdWR6gxNfyXdylg==
+ethers@^6.0.5:
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.0.5.tgz#88434ce7884511280584ee724cccbe76fbbef093"
+  integrity sha512-qy0HV9NZpRXdFW6Q15o9WCIpKsxQUPjiJPR7EGK8NJO58CQh59Acz58Z+9uEAgcL1e/0Q1DGGm7+WVTjQuvT7g==
   dependencies:
     "@adraffy/ens-normalize" "1.8.9"
     "@noble/hashes" "1.1.2"
