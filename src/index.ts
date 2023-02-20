@@ -24,8 +24,7 @@ const susAddresses: Array<any> = []; // Array to track all suspicious deployer a
 const baseUrl =
   "https://api.etherscan.io/api?module=account&action=txlistinternal&address="; // Etherscan API base URL for internal transactions retrievals.
 
-// Connecting to the Ethereum mainnet RPC.
-const provider = new JsonRpcProvider(process.env.ETH_MAINNET_URL);
+const provider = new JsonRpcProvider(process.env.ETH_MAINNET_URL); // Connecting to the Ethereum mainnet RPC.
 
 let selectedBlockNumber: number; // Variable that defines the selected block number to be analysed.
 const dir = "./out"; // Define the output directory.
@@ -64,6 +63,7 @@ export async function detect(blockNumber?: number) {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     )) as any;
     const res = await response.json();
+
     // Check if the internal transactions have been conducted by one of the Tornado Cash contract addresses.
     for (let j = 0; j < res.result.length; ++j) {
       let z = 0;
@@ -99,6 +99,5 @@ export async function detect(blockNumber?: number) {
     }
   }
 
-  // Return array of all suspicious addresses.
-  return susAddresses;
+  return susAddresses; // Return array of all suspicious addresses.
 }
