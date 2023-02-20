@@ -40,9 +40,7 @@ export async function detect(blockNumber?: number) {
   // Get the latest block from the network, where `blockPayload` is an array of `TransactionResponse` objects.
   const block = await provider.getBlock(selectedBlockNumber, true);
   if (block) {
-    blockPayload = await Promise.all(
-      block.transactions.map((hash) => block.getPrefetchedTransaction(hash))
-    );
+    blockPayload = block.prefetchedTransactions;
   }
 
   // Get all contract deployment transactions and store the deployer address in a separate array.
