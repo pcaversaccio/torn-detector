@@ -35,7 +35,7 @@
     "chai": "^4.3.7",
     "dotenv": "^16.3.1",
     "eslint": "^8.43.0",
-    "ethers": "^6.6.0",
+    "ethers": "^6.6.1",
     "mocha": "^10.2.0",
     "node-fetch": "3.3.1",
     "syncyarnlock": "^1.0.19",
