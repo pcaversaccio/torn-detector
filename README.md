@@ -11,13 +11,13 @@ It is recommended to install [Yarn](https://classic.yarnpkg.com) through the `np
 
 Once you have `npm` installed, you can run the following both to install and upgrade Yarn:
 
-```bash
+```console
 npm install --global yarn
 ```
 
 After having installed Yarn, simply run:
 
-```bash
+```console
 yarn install
 ```
 
@@ -34,6 +34,6 @@ ETHERSCAN_API_KEY=6FECCD7C9B8C24...
 
 Simply run
 
-```bash
+```console
 yarn test
 ```
