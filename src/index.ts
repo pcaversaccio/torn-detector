@@ -59,7 +59,7 @@ export async function detect(blockNumber?: number) {
     const fetch = (url: RequestInfo) =>
       import("node-fetch").then(({ default: fetch }) => fetch(url));
     const response = (await fetch(
-      `${baseUrl}${initTransactions[i]}&startblock=0&endblock=${selectedBlockNumber}&sort=asc&apikey=${process.env.ETHERSCAN_API_KEY}`
+      `${baseUrl}${initTransactions[i]}&startblock=0&endblock=${selectedBlockNumber}&sort=asc&apikey=${process.env.ETHERSCAN_API_KEY}`,
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     )) as any;
     const res = await response.json();
@@ -86,13 +86,13 @@ export async function detect(blockNumber?: number) {
     // Save the output.
     fs.writeFileSync(
       `${dir}/suspicious_address_block_number_${selectedBlockNumber}.json`,
-      JSON.stringify(susAddresses)
+      JSON.stringify(susAddresses),
     );
 
     // Print the result including Etherscan link.
     const len = susAddresses.length;
     console.log(
-      `\nThe following addresses deployed a contract at block number ${selectedBlockNumber} via funds retrieved through Tornado.Cash:\n`
+      `\nThe following addresses deployed a contract at block number ${selectedBlockNumber} via funds retrieved through Tornado.Cash:\n`,
     );
     for (let i = 0; i < len; ++i) {
       console.log(`- https://etherscan.io/address/${susAddresses[i]}\n`);
