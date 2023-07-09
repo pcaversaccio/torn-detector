@@ -23,8 +23,8 @@
   "scripts": {
     "test": "mocha --exit --recursive 'test/**/*.test.ts'",
     "lint": "npx eslint --ext .ts .",
-    "prettier:check": "npx prettier -c **/*.{js,ts,md,json,yml,yaml}",
-    "prettier:fix": "npx prettier -w **/*.{js,ts,md,sol,json,yml,yaml}"
+    "prettier:check": "npx prettier -c **/*.{cts,md,json,yml,yaml}",
+    "prettier:fix": "npx prettier -w **/*.{cjs,ts,md,sol,json,yml,yaml}"
   },
   "devDependencies": {
     "@types/chai": "^4.3.5",
