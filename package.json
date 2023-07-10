@@ -22,17 +22,18 @@
   "license": "WTFPL",
   "scripts": {
     "test": "mocha --exit --recursive 'test/**/*.test.ts'",
-    "lint": "npx eslint --ext .ts .",
     "prettier:check": "npx prettier -c **/*.{cjs,ts,md,json,yml,yaml}",
-    "prettier:fix": "npx prettier -w **/*.{cjs,ts,md,json,yml,yaml}"
+    "prettier:fix": "npx prettier -w **/*.{cjs,ts,md,json,yml,yaml}",
+    "lint:check": "npm run prettier:check && npx eslint --ext .ts .",
+    "lint:fix": "npm run prettier:fix && npx eslint --ext .ts . --fix"
   },
   "devDependencies": {
     "@types/chai": "^4.3.5",
     "@types/mocha": "^10.0.1",
     "@types/node": "^20.4.1",
     "@types/node-fetch": "^2.6.4",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
-    "@typescript-eslint/parser": "^5.61.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
     "chai": "^4.3.7",
     "dotenv": "^16.3.1",
     "eslint": "^8.44.0",

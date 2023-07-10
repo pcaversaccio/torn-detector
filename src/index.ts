@@ -13,13 +13,13 @@ import {
 dotenv.config();
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-let blockPayload: Array<any> = []; // Array to aggregate all transactions of a single block.
+let blockPayload: any[] = []; // Array to aggregate all transactions of a single block.
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const initTransactions: Array<any> = []; // Array to track all deployer addresses from contract creation transactions.
+const initTransactions: any[] = []; // Array to track all deployer addresses from contract creation transactions.
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const susAddresses: Array<any> = []; // Array to track all suspicious deployer addresses that deployed via funds retrieved through Tornado.Cash.
+const susAddresses: any[] = []; // Array to track all suspicious deployer addresses that deployed via funds retrieved through Tornado.Cash.
 
 const baseUrl =
   "https://api.etherscan.io/api?module=account&action=txlistinternal&address="; // Etherscan API base URL for internal transactions retrievals.

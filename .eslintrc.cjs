@@ -6,6 +6,8 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/stylistic",
     "prettier",
   ],
+  rules: { "@typescript-eslint/prefer-for-of": "off" },
 };
