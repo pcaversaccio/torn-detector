@@ -24,8 +24,8 @@
     "test": "mocha --exit --recursive 'test/**/*.test.ts'",
     "prettier:check": "npx prettier -c **/*.{cjs,ts,md,json,yml,yaml}",
     "prettier:fix": "npx prettier -w **/*.{cjs,ts,md,json,yml,yaml}",
-    "lint:check": "npm run prettier:check && npx eslint --ext .ts .",
-    "lint:fix": "npm run prettier:fix && npx eslint --ext .ts . --fix"
+    "lint:check": "pnpm prettier:check && npx eslint --ext .ts .",
+    "lint:fix": "pnpm prettier:fix && npx eslint --ext .ts . --fix"
   },
   "devDependencies": {
     "@types/chai": "^4.3.9",
