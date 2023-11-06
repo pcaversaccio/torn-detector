@@ -42,7 +42,6 @@
     "mocha": "^10.2.0",
     "node-fetch": "3.3.2",
     "prettier": "^3.0.3",
-    "syncyarnlock": "^1.0.19",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },

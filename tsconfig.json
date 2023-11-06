@@ -1,16 +1,19 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "ES2022",
+    "target": "es2021",
+    "module": "node16",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node16",
+    "outDir": "out",
     "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
     "declarationMap": true,
     "sourceMap": true,
-    "outDir": "./out",
-    "strict": true,
-    "rootDirs": ["./src", "./test"],
-    "esModuleInterop": true,
-    "moduleResolution": "Node16"
+    "rootDirs": ["./test", "./src"]
   },
-  "exclude": ["out", "node_modules"],
-  "include": ["./test", "./src"]
+  "include": ["./test**/*.ts", "./src**/*.ts"],
+  "exclude": ["out", "node_modules"]
 }

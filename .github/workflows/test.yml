@@ -19,32 +19,36 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
         with:
-          submodules: recursive
+          version: latest
+          run_install: false
 
-      - name: Get Yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+      - name: Get pnpm cache directory path
+        id: pnpm-cache-dir-path
+        run: echo "dir=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
 
-      - name: Restore Yarn cache
+      - name: Restore pnpm cache
         uses: actions/cache@v3
-        id: yarn-cache
+        id: pnpm-cache
         with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          path: ${{ steps.pnpm-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-yarn-
+            ${{ runner.os }}-pnpm-store-
 
       - name: Use Node.js ${{ matrix.node_version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node_version }}
 
-      - name: Install Yarn project with a clean slate
-        run: yarn install --prefer-offline --frozen-lockfile
+      - name: Install pnpm project with a clean slate
+        run: pnpm install --prefer-offline --frozen-lockfile
 
       - name: TORN detector tests
-        run: yarn test
+        run: pnpm test
         env:
           ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
           ETH_MAINNET_URL: ${{ secrets.ETH_MAINNET_URL }}
