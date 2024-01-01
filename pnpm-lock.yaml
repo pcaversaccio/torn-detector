@@ -12,11 +12,11 @@ devDependencies:
     specifier: ^10.0.6
     version: 10.0.6
   "@types/node":
-    specifier: ^20.10.5
-    version: 20.10.5
+    specifier: ^20.10.6
+    version: 20.10.6
   "@types/node-fetch":
-    specifier: ^2.6.9
-    version: 2.6.9
+    specifier: ^2.6.10
+    version: 2.6.10
   "@typescript-eslint/eslint-plugin":
     specifier: ^6.16.0
     version: 6.16.0(@typescript-eslint/parser@6.16.0)(eslint@8.56.0)(typescript@5.3.3)
@@ -24,8 +24,8 @@ devDependencies:
     specifier: ^6.16.0
     version: 6.16.0(eslint@8.56.0)(typescript@5.3.3)
   chai:
-    specifier: ^4.3.10
-    version: 4.3.10
+    specifier: ^5.0.0
+    version: 5.0.0
   dotenv:
     specifier: ^16.3.1
     version: 16.3.1
@@ -49,7 +49,7 @@ devDependencies:
     version: 3.1.1
   ts-node:
     specifier: ^10.9.2
-    version: 10.9.2(@types/node@20.10.5)(typescript@5.3.3)
+    version: 10.9.2(@types/node@20.10.6)(typescript@5.3.3)
   typescript:
     specifier: ^5.3.3
     version: 5.3.3
@@ -279,13 +279,13 @@ packages:
       }
     dev: true
 
-  /@types/node-fetch@2.6.9:
+  /@types/node-fetch@2.6.10:
     resolution:
       {
-        integrity: sha512-bQVlnMLFJ2d35DkPNjEPmd9ueO/rh5EiaZt2bhqiSarPjZIuIV6bPQVqcrEyvNo+AfTrRGVazle1tl597w3gfA==,
+        integrity: sha512-PPpPK6F9ALFTn59Ka3BaL+qGuipRfxNE8qVgkp0bVixeiR2c2/L+IVOiBdu9JhhT22sWnQEp6YyHGI2b2+CMcA==,
       }
     dependencies:
-      "@types/node": 20.10.5
+      "@types/node": 20.10.6
       form-data: 4.0.0
     dev: true
 
@@ -296,10 +296,10 @@ packages:
       }
     dev: true
 
-  /@types/node@20.10.5:
+  /@types/node@20.10.6:
     resolution:
       {
-        integrity: sha512-nNPsNE65wjMxEKI93yOP+NPGGBJz/PoN3kZsVLee0XMiJolxSekEVD8wRwBUBqkwc7UWop0edW50yrCQW4CyRw==,
+        integrity: sha512-Vac8H+NlRNNlAmDfGUP7b5h/KA+AtWIzuXy0E6OyP8f1tCLYAtPvKRRDJjAPqhpCb0t6U2j7/xqAuLEebW2kiw==,
       }
     dependencies:
       undici-types: 5.26.5
@@ -475,7 +475,7 @@ packages:
       }
     dev: true
 
-  /acorn-jsx@5.3.2(acorn@8.11.2):
+  /acorn-jsx@5.3.2(acorn@8.11.3):
     resolution:
       {
         integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==,
@@ -483,7 +483,7 @@ packages:
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.11.2
+      acorn: 8.11.3
     dev: true
 
   /acorn-walk@8.3.1:
@@ -494,10 +494,10 @@ packages:
     engines: { node: ">=0.4.0" }
     dev: true
 
-  /acorn@8.11.2:
+  /acorn@8.11.3:
     resolution:
       {
-        integrity: sha512-nc0Axzp/0FILLEVsm4fNwLCwMttvhEI263QtVPQcbpfZZ3ts0hLsZGOpE6czNlid7CJ9MlyH8reXkpsf3YUY4w==,
+        integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==,
       }
     engines: { node: ">=0.4.0" }
     hasBin: true
@@ -581,11 +581,12 @@ packages:
     engines: { node: ">=8" }
     dev: true
 
-  /assertion-error@1.1.0:
+  /assertion-error@2.0.1:
     resolution:
       {
-        integrity: sha512-jgsaNduz+ndvGyFt3uSuWqvy4lCnIJiovtouQN5JZHOKCS2QuhEdbcQHFhVksz2N2U9hXJo8odG7ETyWlEeuDw==,
+        integrity: sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA==,
       }
+    engines: { node: ">=12" }
     dev: true
 
   /asynckit@0.4.0:
@@ -662,20 +663,18 @@ packages:
     engines: { node: ">=10" }
     dev: true
 
-  /chai@4.3.10:
+  /chai@5.0.0:
     resolution:
       {
-        integrity: sha512-0UXG04VuVbruMUYbJ6JctvH0YnC/4q3/AkT18q4NaITo91CUm0liMS9VqzT9vZhVQ/1eqPanMWjBM+Juhfb/9g==,
+        integrity: sha512-HO5p0oEKd5M6HEcwOkNAThAE3j960vIZvVcc0t2tI06Dd0ATu69cEnMB2wOhC5/ZyQ6m67w3ePjU/HzXsSsdBA==,
       }
-    engines: { node: ">=4" }
+    engines: { node: ">=12" }
     dependencies:
-      assertion-error: 1.1.0
-      check-error: 1.0.3
-      deep-eql: 4.1.3
-      get-func-name: 2.0.2
-      loupe: 2.3.7
-      pathval: 1.1.1
-      type-detect: 4.0.8
+      assertion-error: 2.0.1
+      check-error: 2.0.0
+      deep-eql: 5.0.1
+      loupe: 3.0.2
+      pathval: 2.0.0
     dev: true
 
   /chalk@4.1.2:
@@ -689,13 +688,12 @@ packages:
       supports-color: 7.2.0
     dev: true
 
-  /check-error@1.0.3:
+  /check-error@2.0.0:
     resolution:
       {
-        integrity: sha512-iKEoDYaRmd1mxM90a2OEfWhjsjPpYPuQ+lMYsoxB126+t8fw7ySEO48nmDg5COTjxDI65/Y2OWpeEHk3ZOe8zg==,
+        integrity: sha512-tjLAOBHKVxtPoHe/SA7kNOMvhCRdCJ3vETdeY0RuAc9popf+hyaSV6ZEg9hr4cpWF7jmo/JSWEnLDrnijS9Tog==,
       }
-    dependencies:
-      get-func-name: 2.0.2
+    engines: { node: ">= 16" }
     dev: true
 
   /chokidar@3.5.3:
@@ -812,14 +810,12 @@ packages:
     engines: { node: ">=10" }
     dev: true
 
-  /deep-eql@4.1.3:
+  /deep-eql@5.0.1:
     resolution:
       {
-        integrity: sha512-WaEtAOpRA1MQ0eohqZjpGD8zdI0Ovsm8mmFhaDN8dvDZzyoUMcYDnf5Y6iu7HTXxf8JDS23qWa4a+hKCDyOPzw==,
+        integrity: sha512-nwQCf6ne2gez3o1MxWifqkciwt0zhl0LO1/UwVu4uMBuPmflWM4oQ70XMqHqnBJA+nhzncaqL9HVL6KkHJ28lw==,
       }
     engines: { node: ">=6" }
-    dependencies:
-      type-detect: 4.0.8
     dev: true
 
   /deep-is@0.1.4:
@@ -992,8 +988,8 @@ packages:
       }
     engines: { node: ^12.22.0 || ^14.17.0 || >=16.0.0 }
     dependencies:
-      acorn: 8.11.2
-      acorn-jsx: 5.3.2(acorn@8.11.2)
+      acorn: 8.11.3
+      acorn-jsx: 5.3.2(acorn@8.11.3)
       eslint-visitor-keys: 3.4.3
     dev: true
 
@@ -1514,10 +1510,10 @@ packages:
       is-unicode-supported: 0.1.0
     dev: true
 
-  /loupe@2.3.7:
+  /loupe@3.0.2:
     resolution:
       {
-        integrity: sha512-zSMINGVYkdpYSOBmLi0D1Uo7JU9nVdQKrHxC8eYlV+9YKK9WePqAlL7lSlorG/U2Fw1w0hTBmaa/jrQ3UbPHtA==,
+        integrity: sha512-Tzlkbynv7dtqxTROe54Il+J4e/zG2iehtJGZUYpTv8WzlkW9qyEcE83UhGJCeuF3SCfzHuM5VWhBi47phV3+AQ==,
       }
     dependencies:
       get-func-name: 2.0.2
@@ -1781,11 +1777,12 @@ packages:
     engines: { node: ">=8" }
     dev: true
 
-  /pathval@1.1.1:
+  /pathval@2.0.0:
     resolution:
       {
-        integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==,
+        integrity: sha512-vE7JKRyES09KiunauX7nd2Q9/L7lhok4smP9RZTDeD4MVs72Dp2qNFVz39Nz5a0FVEW0BJR6C0DYrq6unoziZA==,
       }
+    engines: { node: ">= 14.16" }
     dev: true
 
   /picomatch@2.3.1:
@@ -2022,7 +2019,7 @@ packages:
       typescript: 5.3.3
     dev: true
 
-  /ts-node@10.9.2(@types/node@20.10.5)(typescript@5.3.3):
+  /ts-node@10.9.2(@types/node@20.10.6)(typescript@5.3.3):
     resolution:
       {
         integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==,
@@ -2044,8 +2041,8 @@ packages:
       "@tsconfig/node12": 1.0.11
       "@tsconfig/node14": 1.0.3
       "@tsconfig/node16": 1.0.4
-      "@types/node": 20.10.5
-      acorn: 8.11.2
+      "@types/node": 20.10.6
+      acorn: 8.11.3
       acorn-walk: 8.3.1
       arg: 4.1.3
       create-require: 1.1.1
@@ -2071,14 +2068,6 @@ packages:
     engines: { node: ">= 0.8.0" }
     dependencies:
       prelude-ls: 1.2.1
-    dev: true
-
-  /type-detect@4.0.8:
-    resolution:
-      {
-        integrity: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==,
-      }
-    engines: { node: ">=4" }
     dev: true
 
   /type-fest@0.20.2:
