@@ -12,8 +12,8 @@
     "resolveJsonModule": true,
     "declarationMap": true,
     "sourceMap": true,
-    "rootDirs": ["./test", "./src"]
+    "rootDirs": ["./test", "./src"],
   },
   "include": ["./test**/*.ts", "./src**/*.ts"],
-  "exclude": ["out", "node_modules"]
+  "exclude": ["out", "node_modules"],
 }
