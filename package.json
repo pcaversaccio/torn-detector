@@ -21,9 +21,9 @@
   "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
   "license": "WTFPL",
   "scripts": {
-    "test": "mocha --exit --recursive 'test/**/*.test.ts'",
-    "prettier:check": "npx prettier -c **/*.{cjs,ts,md,json,yml,yaml}",
-    "prettier:fix": "npx prettier -w **/*.{cjs,ts,md,json,yml,yaml}",
+    "test": "mocha --exit --recursive \"test/**/*.test.ts\"",
+    "prettier:check": "npx prettier -c \"**/*.{cjs,ts,md,json,yml,yaml}\"",
+    "prettier:fix": "npx prettier -w \"**/*.{cjs,ts,md,json,yml,yaml}\"",
     "lint:check": "pnpm prettier:check && npx eslint --ext .ts .",
     "lint:fix": "pnpm prettier:fix && npx eslint --ext .ts . --fix"
   },
