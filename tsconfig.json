@@ -15,5 +15,6 @@
     "rootDirs": ["./test", "./src"]
   },
   "include": ["./test**/*.ts", "./src**/*.ts"],
+  "files": ["eslint.config.js"],
   "exclude": ["out", "node_modules"]
 }

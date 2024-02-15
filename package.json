@@ -22,28 +22,28 @@
   "license": "WTFPL",
   "scripts": {
     "test": "mocha --exit --recursive \"test/**/*.test.ts\"",
-    "prettier:check": "npx prettier -c \"**/*.{cjs,ts,md,json,yml,yaml}\"",
-    "prettier:fix": "npx prettier -w \"**/*.{cjs,ts,md,json,yml,yaml}\"",
-    "lint:check": "pnpm prettier:check && npx eslint --ext .ts .",
-    "lint:fix": "pnpm prettier:fix && npx eslint --ext .ts . --fix"
+    "prettier:check": "npx prettier -c \"**/*.{js,ts,md,json,yml,yaml}\"",
+    "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,json,yml,yaml}\"",
+    "lint:check": "pnpm prettier:check && npx eslint .",
+    "lint:fix": "pnpm prettier:fix && npx eslint . --fix"
   },
   "devDependencies": {
+    "@eslint/js": "^8.56.0",
     "@types/chai": "^4.3.11",
     "@types/mocha": "^10.0.6",
-    "@types/node": "^20.11.17",
+    "@types/node": "^20.11.18",
     "@types/node-fetch": "^2.6.11",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "chai": "^5.0.3",
-    "dotenv": "^16.4.2",
+    "chai": "^5.1.0",
+    "dotenv": "^16.4.4",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
-    "ethers": "^6.11.0",
+    "ethers": "^6.11.1",
     "mocha": "^10.3.0",
     "node-fetch": "3.3.2",
     "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.0.1"
   },
   "type": "module"
 }
