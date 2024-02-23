@@ -9,14 +9,14 @@ devDependencies:
     specifier: ^8.56.0
     version: 8.56.0
   "@types/chai":
-    specifier: ^4.3.11
-    version: 4.3.11
+    specifier: ^4.3.12
+    version: 4.3.12
   "@types/mocha":
     specifier: ^10.0.6
     version: 10.0.6
   "@types/node":
-    specifier: ^20.11.19
-    version: 20.11.19
+    specifier: ^20.11.20
+    version: 20.11.20
   "@types/node-fetch":
     specifier: ^2.6.11
     version: 2.6.11
@@ -46,7 +46,7 @@ devDependencies:
     version: 3.2.5
   ts-node:
     specifier: ^10.9.2
-    version: 10.9.2(@types/node@20.11.19)(typescript@5.3.3)
+    version: 10.9.2(@types/node@20.11.20)(typescript@5.3.3)
   typescript:
     specifier: ^5.3.3
     version: 5.3.3
@@ -258,10 +258,10 @@ packages:
       }
     dev: true
 
-  /@types/chai@4.3.11:
+  /@types/chai@4.3.12:
     resolution:
       {
-        integrity: sha512-qQR1dr2rGIHYlJulmr8Ioq3De0Le9E4MJ5AiaeAETJJpndT1uUNHsGFK3L/UIu+rbkQSdj8J/w2bCsBZc/Y5fQ==,
+        integrity: sha512-zNKDHG/1yxm8Il6uCCVsm+dRdEsJlFoDu73X17y09bId6UwoYww+vFBsAcRzl8knM1sab3Dp1VRikFQwDOtDDw==,
       }
     dev: true
 
@@ -285,7 +285,7 @@ packages:
         integrity: sha512-24xFj9R5+rfQJLRyM56qh+wnVSYhyXC2tkoBndtY0U+vubqNsYXGjufB2nn8Q6gt0LrARwL6UBtMCSVCwl4B1g==,
       }
     dependencies:
-      "@types/node": 20.11.19
+      "@types/node": 20.11.20
       form-data: 4.0.0
     dev: true
 
@@ -296,10 +296,10 @@ packages:
       }
     dev: true
 
-  /@types/node@20.11.19:
+  /@types/node@20.11.20:
     resolution:
       {
-        integrity: sha512-7xMnVEcZFu0DikYjWOlRq7NTPETrm7teqUT2WkQjrTIkEgUyyGdWsj/Zg8bEJt5TNklzbPD1X3fqfsHw3SpapQ==,
+        integrity: sha512-7/rR21OS+fq8IyHTgtLkDK949uzsa6n8BkziAKtPVpugIkO6D+/ooXMvzXxDnZrmtXVfjb1bKQafYpb8s89LOg==,
       }
     dependencies:
       undici-types: 5.26.5
@@ -2009,7 +2009,7 @@ packages:
       typescript: 5.3.3
     dev: true
 
-  /ts-node@10.9.2(@types/node@20.11.19)(typescript@5.3.3):
+  /ts-node@10.9.2(@types/node@20.11.20)(typescript@5.3.3):
     resolution:
       {
         integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==,
@@ -2031,7 +2031,7 @@ packages:
       "@tsconfig/node12": 1.0.11
       "@tsconfig/node14": 1.0.3
       "@tsconfig/node16": 1.0.4
-      "@types/node": 20.11.19
+      "@types/node": 20.11.20
       acorn: 8.11.3
       acorn-walk: 8.3.2
       arg: 4.1.3
