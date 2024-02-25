@@ -28,14 +28,14 @@
     "lint:fix": "pnpm prettier:fix && npx eslint . --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^8.56.0",
+    "@eslint/js": "^8.57.0",
     "@types/chai": "^4.3.12",
     "@types/mocha": "^10.0.6",
     "@types/node": "^20.11.20",
     "@types/node-fetch": "^2.6.11",
     "chai": "^5.1.0",
     "dotenv": "^16.4.5",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "ethers": "^6.11.1",
     "mocha": "^10.3.0",
