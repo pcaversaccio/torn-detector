@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^10.0.6
     version: 10.0.6
   "@types/node":
-    specifier: ^20.11.27
-    version: 20.11.27
+    specifier: ^20.11.28
+    version: 20.11.28
   "@types/node-fetch":
     specifier: ^2.6.11
     version: 2.6.11
@@ -46,7 +46,7 @@ devDependencies:
     version: 3.2.5
   ts-node:
     specifier: ^10.9.2
-    version: 10.9.2(@types/node@20.11.27)(typescript@5.4.2)
+    version: 10.9.2(@types/node@20.11.28)(typescript@5.4.2)
   typescript:
     specifier: ^5.4.2
     version: 5.4.2
@@ -285,7 +285,7 @@ packages:
         integrity: sha512-24xFj9R5+rfQJLRyM56qh+wnVSYhyXC2tkoBndtY0U+vubqNsYXGjufB2nn8Q6gt0LrARwL6UBtMCSVCwl4B1g==,
       }
     dependencies:
-      "@types/node": 20.11.27
+      "@types/node": 20.11.28
       form-data: 4.0.0
     dev: true
 
@@ -296,10 +296,10 @@ packages:
       }
     dev: true
 
-  /@types/node@20.11.27:
+  /@types/node@20.11.28:
     resolution:
       {
-        integrity: sha512-qyUZfMnCg1KEz57r7pzFtSGt49f6RPkPBis3Vo4PbS7roQEDn22hiHzl/Lo1q4i4hDEgBJmBF/NTNg2XR0HbFg==,
+        integrity: sha512-M/GPWVS2wLkSkNHVeLkrF2fD5Lx5UC4PxA0uZcKc6QqbIQUJyW1jVjueJYi1z8n0I5PxYrtpnPnWglE+y9A0KA==,
       }
     dependencies:
       undici-types: 5.26.5
@@ -603,10 +603,10 @@ packages:
       }
     dev: true
 
-  /binary-extensions@2.2.0:
+  /binary-extensions@2.3.0:
     resolution:
       {
-        integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==,
+        integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==,
       }
     engines: { node: ">=8" }
     dev: true
@@ -1363,7 +1363,7 @@ packages:
       }
     engines: { node: ">=8" }
     dependencies:
-      binary-extensions: 2.2.0
+      binary-extensions: 2.3.0
     dev: true
 
   /is-extglob@2.1.1:
@@ -2009,7 +2009,7 @@ packages:
       typescript: 5.4.2
     dev: true
 
-  /ts-node@10.9.2(@types/node@20.11.27)(typescript@5.4.2):
+  /ts-node@10.9.2(@types/node@20.11.28)(typescript@5.4.2):
     resolution:
       {
         integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==,
@@ -2031,7 +2031,7 @@ packages:
       "@tsconfig/node12": 1.0.11
       "@tsconfig/node14": 1.0.3
       "@tsconfig/node16": 1.0.4
-      "@types/node": 20.11.27
+      "@types/node": 20.11.28
       acorn: 8.11.3
       acorn-walk: 8.3.2
       arg: 4.1.3
