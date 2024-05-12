@@ -33,7 +33,7 @@
     "@types/mocha": "^10.0.6",
     "@types/node": "^20.12.11",
     "@types/node-fetch": "^2.6.11",
-    "chai": "^5.1.0",
+    "chai": "^5.1.1",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
