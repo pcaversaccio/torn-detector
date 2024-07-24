@@ -17,8 +17,8 @@ importers:
         specifier: ^10.0.7
         version: 10.0.7
       "@types/node":
-        specifier: ^20.14.11
-        version: 20.14.11
+        specifier: ^20.14.12
+        version: 20.14.12
       "@types/node-fetch":
         specifier: ^2.6.11
         version: 2.6.11
@@ -48,7 +48,7 @@ importers:
         version: 3.3.3
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@20.14.11)(typescript@5.5.4)
+        version: 10.9.2(@types/node@20.14.12)(typescript@5.5.4)
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
@@ -230,10 +230,10 @@ packages:
         integrity: sha512-N+0kuo9KgrUQ1Sn/ifDXsvg0TTleP7rIy4zOBGECxAljqvqfqpTfzx0Q1NUedOixRMBfe2Whhb056a42cWs26Q==,
       }
 
-  "@types/node@20.14.11":
+  "@types/node@20.14.12":
     resolution:
       {
-        integrity: sha512-kprQpL8MMeszbz6ojB5/tU8PLN4kesnN8Gjzw349rDlNgsSzg90lAVj3llK99Dh7JON+t9AuscPPFW6mPbTnSA==,
+        integrity: sha512-r7wNXakLeSsGT0H1AU863vS2wa5wBOK4bWMjZz2wj+8nBx+m5PeIn0k8AloSLpRuiwdRQZwarZqHE4FNArPuJQ==,
       }
 
   "@typescript-eslint/eslint-plugin@7.17.0":
@@ -1671,12 +1671,12 @@ snapshots:
 
   "@types/node-fetch@2.6.11":
     dependencies:
-      "@types/node": 20.14.11
+      "@types/node": 20.14.12
       form-data: 4.0.0
 
   "@types/node@18.15.13": {}
 
-  "@types/node@20.14.11":
+  "@types/node@20.14.12":
     dependencies:
       undici-types: 5.26.5
 
@@ -2362,14 +2362,14 @@ snapshots:
     dependencies:
       typescript: 5.5.4
 
-  ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.4):
+  ts-node@10.9.2(@types/node@20.14.12)(typescript@5.5.4):
     dependencies:
       "@cspotcode/source-map-support": 0.8.1
       "@tsconfig/node10": 1.0.11
       "@tsconfig/node12": 1.0.11
       "@tsconfig/node14": 1.0.3
       "@tsconfig/node16": 1.0.4
-      "@types/node": 20.14.11
+      "@types/node": 20.14.12
       acorn: 8.12.1
       acorn-walk: 8.3.3
       arg: 4.1.3
