@@ -5,6 +5,7 @@ describe("TORN detector test", () => {
   it("return empty array if no suspicious attacker address is available", async function () {
     const blockNumber = 14576841;
     const result = await detect(blockNumber);
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     expect(result).to.be.an("array").that.is.empty;
   });
 
