@@ -24,6 +24,6 @@ export default tseslint.config(
     },
   },
   {
-    ignores: ["node_modules/**", "out/**"],
+    ignores: ["node_modules/**", "pnpm-lock.yaml", "out/**"],
   },
 );
