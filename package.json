@@ -36,7 +36,7 @@
     "@types/node-fetch": "^2.6.12",
     "chai": "^5.1.2",
     "dotenv": "^16.4.7",
-    "eslint": "^9.20.0",
+    "eslint": "^9.20.1",
     "eslint-config-prettier": "^10.0.1",
     "ethers": "^6.13.5",
     "mocha": "^11.1.0",
