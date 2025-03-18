@@ -1,7 +1,7 @@
 # 🕵️‍♂️ TORN Detector
 
 [![🕵️‍♂️ Test TORN detector](https://github.com/pcaversaccio/torn-detector/actions/workflows/test.yml/badge.svg)](https://github.com/pcaversaccio/torn-detector/actions/workflows/test.yml)
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-blue.svg)](http://www.wtfpl.net/about/)
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-blue.svg)](https://www.wtfpl.net/about/)
 
 Detect if a contract has been deployed in the latest (or predefined) block from an address that was previously funded through Tornado.Cash.
 
