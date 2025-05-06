@@ -30,9 +30,9 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.26.0",
-    "@types/chai": "^5.2.1",
+    "@types/chai": "^5.2.2",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^22.15.3",
+    "@types/node": "^22.15.12",
     "@types/node-fetch": "^2.6.12",
     "chai": "^5.2.0",
     "dotenv": "^16.5.0",
@@ -44,7 +44,7 @@
     "prettier": "^3.5.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.31.1"
+    "typescript-eslint": "^8.32.0"
   },
   "type": "module"
 }
