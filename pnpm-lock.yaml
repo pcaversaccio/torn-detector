@@ -550,8 +550,8 @@ packages:
     resolution: {integrity: sha512-gIXjKqtFuWEgzFRJA9WCQeSJLZDjgJUOMCMzxtvFq/37KojM1BFGufqsCy0r4qSQmYLsZYMeyRqzIWOMup03sw==}
     engines: {node: '>=14'}
 
-  form-data@4.0.2:
-    resolution: {integrity: sha512-hGfm/slu0ZabnNt4oaRZ6uREyfCj6P4fT/n6A1rGV+Z0VdGXjfOhVUpkn6qVQONHGIFwmveGXyDs75+nr6FM8w==}
+  form-data@4.0.3:
+    resolution: {integrity: sha512-qsITQPfmvMOSAdeyZ+12I1c+CKSstAFAwu+97zrnWAbIr5u8wfsExUzCesVLC8NgHuRUqNN4Zy6UPWUTRGslcA==}
     engines: {node: '>= 6'}
 
   formdata-polyfill@4.0.10:
@@ -1126,7 +1126,7 @@ snapshots:
   '@types/node-fetch@2.6.12':
     dependencies:
       '@types/node': 22.15.29
-      form-data: 4.0.2
+      form-data: 4.0.3
 
   '@types/node@22.15.29':
     dependencies:
@@ -1523,11 +1523,12 @@ snapshots:
       cross-spawn: 7.0.6
       signal-exit: 4.1.0
 
-  form-data@4.0.2:
+  form-data@4.0.3:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       es-set-tostringtag: 2.1.0
+      hasown: 2.0.2
       mime-types: 2.1.35
 
   formdata-polyfill@4.0.10:
