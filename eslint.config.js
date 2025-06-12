@@ -2,6 +2,7 @@ import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import eslintConfigPrettier from "eslint-config-prettier";
 
+/** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigArray} */
 export default tseslint.config(
   {
     files: ["**/*.{js,ts}"],
