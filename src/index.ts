@@ -10,7 +10,7 @@ import {
   TORN_ADDRESS_01ETH,
 } from "./addresses.js";
 
-dotenv.config();
+dotenv.config({ quiet: true });
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let blockPayload: any[] = []; // Array to aggregate all transactions of a single block.
