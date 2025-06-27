@@ -22,7 +22,7 @@ const initTransactions: any[] = []; // Array to track all deployer addresses fro
 const susAddresses: any[] = []; // Array to track all suspicious deployer addresses that deployed via funds retrieved through Tornado.Cash.
 
 const baseUrl =
-  "https://api.etherscan.io/api?module=account&action=txlistinternal&address="; // Etherscan API base URL for internal transactions retrievals.
+  "https://api.etherscan.io/v2/api?chainid=1&module=account&action=txlistinternal&address="; // Etherscan API base URL for internal transactions retrievals.
 
 const provider = new JsonRpcProvider(process.env.ETH_MAINNET_URL); // Connecting to the Ethereum mainnet RPC.
 
