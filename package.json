@@ -32,7 +32,7 @@
     "@eslint/js": "^9.32.0",
     "@types/chai": "^5.2.2",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^24.1.0",
+    "@types/node": "^24.2.0",
     "@types/node-fetch": "^2.6.13",
     "chai": "^5.2.1",
     "cross-env": "^10.0.0",
@@ -44,8 +44,8 @@
     "node-fetch": "3.3.2",
     "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.38.0"
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.39.0"
   },
   "type": "module"
 }
