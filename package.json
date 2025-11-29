@@ -20,7 +20,7 @@
   },
   "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
   "license": "WTFPL",
-  "packageManager": "pnpm@10.23.0",
+  "packageManager": "pnpm@10.24.0",
   "scripts": {
     "test": "cross-env NODE_NO_WARNINGS=1 mocha",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,json,yml,yaml}\"",
@@ -42,7 +42,7 @@
     "ethers": "^6.15.0",
     "mocha": "^11.7.5",
     "node-fetch": "3.3.2",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.48.0"
