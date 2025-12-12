@@ -1,9 +1,10 @@
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import eslintConfigPrettier from "eslint-config-prettier";
+import globals from "globals";
+import { defineConfig } from "eslint/config";
 
-/** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigArray} */
-export default tseslint.config(
+export default defineConfig(
   {
     files: ["**/*.{js,ts}"],
     extends: [
@@ -19,6 +20,9 @@ export default tseslint.config(
     languageOptions: {
       ecmaVersion: "latest",
       parser: tseslint.parser,
+      globals: {
+        ...globals.node,
+      },
       parserOptions: {
         project: true,
         tsconfigRootDir: import.meta.dirname,
