@@ -89,4 +89,4 @@ jobs:
         run: gem install awesome_bot
 
       - name: Validate URLs
-        run: awesome_bot ./*.md src/*.ts --request-delay 0.4 --white-list https://eth-mainnet.alchemyapi.io/v2/
+        run: awesome_bot ./*.md src/*.ts --request-delay 0.4 --white-list https://eth-mainnet.g.alchemy.com/v2/

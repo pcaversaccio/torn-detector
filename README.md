@@ -26,7 +26,7 @@ pnpm install
 You must specify the RPC URL of your mainnet node as well as your Etherscan API key in the `.env` file:
 
 ```txt
-ETH_MAINNET_URL=https://eth-mainnet.alchemyapi.io/v2/<your_api_key>
+ETH_MAINNET_URL=https://eth-mainnet.g.alchemy.com/v2/<your_api_key>
 ETHERSCAN_API_KEY=6FECCD7C9B8C24...
 ```
 
