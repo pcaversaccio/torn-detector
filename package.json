@@ -18,21 +18,21 @@
   "bugs": {
     "url": "https://github.com/pcaversaccio/torn-detector/issues"
   },
-  "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
+  "author": "pcaversaccio",
   "license": "WTFPL",
-  "packageManager": "pnpm@10.28.2",
+  "packageManager": "pnpm@10.29.1",
   "scripts": {
     "test": "cross-env NODE_NO_WARNINGS=1 mocha",
-    "prettier:check": "npx prettier -c \"**/*.{js,ts,md,json,yml,yaml}\"",
-    "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,json,yml,yaml}\"",
-    "lint:check": "pnpm prettier:check && npx eslint .",
-    "lint:fix": "pnpm prettier:fix && npx eslint . --fix"
+    "prettier:check": "prettier -c \"**/*.{js,ts,md,json,yml,yaml}\"",
+    "prettier:fix": "prettier -w \"**/*.{js,ts,md,json,yml,yaml}\"",
+    "lint:check": "pnpm prettier:check && eslint .",
+    "lint:fix": "pnpm prettier:fix && eslint . --fix"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@types/chai": "^5.2.3",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^25.2.1",
+    "@types/node": "^25.2.2",
     "@types/node-fetch": "^2.6.13",
     "chai": "^6.2.2",
     "cross-env": "^10.1.0",
