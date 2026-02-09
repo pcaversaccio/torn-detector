@@ -20,7 +20,7 @@
   },
   "author": "pcaversaccio",
   "license": "WTFPL",
-  "packageManager": "pnpm@10.29.1",
+  "packageManager": "pnpm@10.29.2",
   "scripts": {
     "test": "cross-env NODE_NO_WARNINGS=1 mocha",
     "prettier:check": "prettier -c \"**/*.{js,ts,md,json,yml,yaml}\"",
