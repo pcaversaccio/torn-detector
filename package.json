@@ -37,7 +37,7 @@
     "chai": "^6.2.2",
     "cross-env": "^10.1.0",
     "dotenv": "^17.3.1",
-    "eslint": "^10.0.0",
+    "eslint": "^10.0.1",
     "eslint-config-prettier": "^10.1.8",
     "ethers": "^6.16.0",
     "globals": "^17.3.0",
