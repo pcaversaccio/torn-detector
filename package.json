@@ -45,8 +45,8 @@
     "node-fetch": "3.3.2",
     "prettier": "^3.8.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.57.2"
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.0"
   },
   "type": "module"
 }
