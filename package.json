@@ -20,7 +20,7 @@
   },
   "author": "pcaversaccio",
   "license": "WTFPL",
-  "packageManager": "pnpm@11.1.1",
+  "packageManager": "pnpm@11.1.3",
   "scripts": {
     "test": "cross-env NODE_NO_WARNINGS=1 mocha",
     "prettier:check": "prettier -c \"**/*.{js,ts,md,json,yml,yaml}\"",
@@ -32,7 +32,7 @@
     "@eslint/js": "^10.0.1",
     "@types/chai": "^5.2.3",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^25.6.2",
+    "@types/node": "^25.7.0",
     "@types/node-fetch": "^2.6.13",
     "chai": "^6.2.2",
     "cross-env": "^10.1.0",
@@ -46,7 +46,7 @@
     "prettier": "^3.8.3",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.2"
+    "typescript-eslint": "^8.59.3"
   },
   "type": "module"
 }
